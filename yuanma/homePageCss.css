@@ -1,0 +1,456 @@
+body{
+	background-color: #ff8566;
+}
+
+::selection{
+	background-color: white;
+	color: black;
+}
+
+h1{
+	color: yellow;
+	width:100%;
+	border:1px solid red;
+	text-align: center;
+	margin:0px;
+	margin-bottom: 5px;
+	margin-top: 45px;
+	letter-spacing: 20px;
+	text-shadow: 4px 3px red;
+	-webkit-animation: hmove 5s infinite; /* Chrome, Safari, Opera */
+    animation: hmove 5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes hmove {
+    0% {color: red;
+       text-shadow:4px 3px yellow;}
+    50% {color: yellow;
+    	text-shadow:4px 3px red;}
+    100% {color: red;
+    text-shadow:4px 3px yellow;}
+}
+
+/* Standard syntax */
+@keyframes hmove {
+    0% {color: red;
+       text-shadow:4px 3px yellow;}
+    50% {color: yellow;
+    	text-shadow:4px 3px red;}
+    100% {color: red;
+    text-shadow:4px 3px yellow;}
+}
+
+caption{
+	color: #4d0000;
+	caption-side: bottom;
+}
+
+div.layout{
+	width: 100%;
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+	height: 300px;
+}
+img.yidaiyilu{
+	height: 100%;
+	width: 100%;
+	border:1px solid red;
+	margin:0px;
+	
+}
+
+div.goodLook{
+	height: 100%;
+	width:50%;
+	perspective: 300px;
+	perspective-origin: 0% 0%;
+	transform-style: preserve-3d; 
+	float: left;
+	margin:0px;
+	padding:0px;
+	position: relative;
+}
+
+img.yidaiyilu:hover{
+	cursor:not-allowed;
+	animation-name: imgYiAnim;
+	animation-duration: 3s;
+	transform: rotateX(45deg);
+}
+
+@keyframes imgYiAnim{
+	0%{
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(45deg);
+	}
+}
+
+a.baidubaike{
+	height:60px;
+	width: 60px;
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	float:left;
+	margin-right: 20px;
+}
+
+ul{
+	width: 100%;
+	margin:0px;
+	padding: 0px;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1;
+}
+
+li,details{
+	background-color: #333333;
+	float:left;
+	width: 25%;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+}
+
+li a.nav,details a.showBlock,details a.enroll,details summary{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	outline: none;
+}
+
+li a.nav:hover,details a.showBlock:hover,details a.enroll:hover,details summary:hover{
+	text-decoration-line:underline; 
+	cursor: pointer;
+}
+
+img.baidubaike{
+	height:inherit;
+	width:inherit;
+	border:1px dotted black;
+	margin:inherit;
+	transform: scale(1,1);
+	animation: imgMove 5s;
+	border-radius: 50%;
+}
+
+img.baidubaike:hover{
+	transform: rotate(0deg);
+	animation: imgMoveHover 2s infinite;
+
+}
+
+@-webkit-keyframes imgMoveHover {
+    50% {
+    	transform: rotate(360deg);
+    	}
+}
+
+/* Standard syntax */
+@keyframes imgMoveHover {
+    50% {
+    	transform: rotate(360deg);
+    	}
+}
+
+@-webkit-keyframes imgMove {
+    50% {
+    	transform: scale(0,0);
+    	}
+}
+
+/* Standard syntax */
+@keyframes imgMove {
+    50% {
+    	transform: scale(0,0);
+    	}
+}
+
+p.zhengwen{
+	width:48%;
+	padding:10px;
+	border:1px solid red;
+	box-sizing: border-box;
+	margin:0px;
+	color:#ffff66;
+	float: left;
+	text-align: justify;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	background-color:white;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+td,th{
+	border:3px solid #dddddd;
+	text-align: center;
+	padding:5px;
+	font-size: 5px;
+}
+
+tr:nth-child(odd){
+	background-color: #dddddd;
+}
+
+th,tr.foot{
+	background-color: white;
+}
+
+thead{
+	color:#000099;
+}
+
+tfoot{
+	color:#330000;
+}
+
+tbody{
+	color:#006600;
+}
+
+iframe{
+	border:7px ridge hsl(0, 0%, 95%);
+	width:97%;
+	display:block;
+	margin:10px auto;
+	height: 600px;
+	overflow: auto;
+}
+
+div.time{
+	width: 100%;
+	height:50px;
+	box-sizing: border-box;
+	border:1px solid red;
+}
+
+button.time{
+	color:white;
+	outline: none;
+	background-color: #4CAF50;
+	width:20%;
+	float:left;
+	height: 100%;
+	margin-left: 10px;
+}
+
+button.time:hover{
+	cursor: pointer;
+	background-color: #45a049;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color:white;
+    transform: skewX(160deg);
+}
+
+p.time{
+	margin-left: 25%;
+	color: #1a0000;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+p.outLink{
+	width:99.2%;
+	border:1px solid red;
+	padding-left: 10px;
+	margin-top: 50px;
+}
+
+a.outLink{
+	font-size: inherit;
+}
+
+a.outLink:link{
+	text-decoration: none;
+	color:black;
+}
+
+a.outLink:visited{
+	text-decoration: underline;
+	color: blue;
+}
+
+a.outLink:hover{
+	text-decoration: wavy;
+	text-shadow: 1px 1px red;
+	color:yellow;
+}
+
+a.outLink:active{
+	text-indent: underline;
+	color:red;
+}
+
+div.dropDown{
+	display: block;
+	position: relative;
+	z-index: 1;
+	top:0;
+	left: 0;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+}
+
+div#dengluDiv,div#informationDiv,div#adminDiv{
+	display: none;
+	width: 100%;
+	height:100%;
+	position: fixed;
+	left:0;
+	top: 0;
+	z-index: 2;
+	background-color: hsla(0, 100%, 50%,0.5);
+}
+
+div#informationDiv,div#adminDiv{
+	background-color: rgb(255,0,0);
+	color:yellow;
+}
+
+details#person,details#admin{
+	display: none;
+}
+
+form#denglu{
+	position: relative;
+	transform: translateY(230px);
+	margin:auto;
+}
+
+a.close{
+	font-size: 50px;
+	font-weight: bold;
+	position:absolute;
+	top:0px;
+	right:20px;
+	margin:0;
+	padding: 0;
+	transform: rotate(45deg);
+	text-decoration: none;
+	color:black;
+	background:none;
+}
+
+button#changeInfo{
+	position: absolute;
+	top:25px;
+	right:150px;
+	margin:0;
+}
+
+button#changeKey{
+	position: absolute;
+	top:25px;
+	right:250px;
+	margin:0;
+}
+
+button#changeHead{
+	position: absolute;
+	top: 25px;
+	right: 350px;
+	margin: 0;
+}
+
+a.close:hover{
+	background: none;
+	cursor: pointer;
+	color: gray;
+}
+
+div#dengluDiv:target,div#informationDiv:target,div#adminDiv:target{
+	display: block;
+}
+
+p.copyright{
+	color: black;
+	margin:0;
+	width: 100%;
+	text-align: center;
+	border: 1px solid red;
+}
+
+span.tooltip{
+	visibility: hidden;
+	background-color: black;
+	color:white;
+	position: absolute;
+	z-index: 1;
+	top:102px;
+	left: 381px;
+	padding:3px 5px 3px 5px;
+	border-radius: 6px;
+	margin: 0;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 3s;
+}
+
+div.tooltipPoint{
+	content: "";
+	position:absolute;
+	z-index: 1;
+	/*此处不要设置高度宽度*/
+	border-color:black transparent transparent transparent;
+	border-style: solid;
+	border-width: 5px;
+	top:100%;
+	left:50%;
+}
+
+img.yidaiyilu:hover~span.tooltip{
+	visibility: visible;
+	opacity: 1;
+}
+
+ruby{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	color: yellow;
+	font-size: 30px;
+	font-weight: 30px;
+}
+
+rb{
+	letter-spacing: 5px;
+}
+
+a.showBlock span,a.enroll span{
+	position:relative;
+	transition-duration:0.5s; 
+}
+
+a.showBlock span:after,a.enroll span:after{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+a.showBlock:hover span,a.enroll:hover span{
+	padding-right: 15px;
+}
+
+a.showBlock:hover span:after,a.enroll:hover span:after{
+	opacity: 1;
+	right: 0;
+}
+
+table tr td{
+	text-align: left;
+}
+table tr th{
+	text-align: center;
+}

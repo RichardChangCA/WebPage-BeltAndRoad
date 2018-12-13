@@ -1,0 +1,196 @@
+body{
+	background-color: yellow;
+}
+
+::selection{
+	background-color: black;
+	color: white;
+}
+
+div.fudong {
+	float: left;
+	margin:0px;
+	padding:10px;
+	max-width: 420px;
+	height:200px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+div#bottomdec{
+	border-bottom: 1px dotted red;
+}
+
+div#bottomdec:hover{
+	height:300px;
+	cursor: n-resize;
+	border-bottom: none;
+}
+
+h2{
+	text-align: center;
+	letter-spacing: 10px;
+	color:white;
+	text-shadow: 0 0 25px red, 0 0 5px orange;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+p {
+	text-indent: 32px;
+	color:red;
+	line-height: 1.2;
+	text-align: justify;
+}
+
+h2:hover,p:hover{
+	cursor:auto;
+}
+
+div.festival{
+	clear: both;
+	resize: vertical;
+	border:5px dotted black;
+	width: 94.5%;
+	height:150px;
+	box-sizing: border-box;
+	padding:10px;
+	overflow: scroll;
+	border-radius: 10px;
+	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+p.festival{
+	color: white !important;
+}
+
+
+ol.lay1{
+	counter-reset: section;
+	list-style-type: none;
+	color: red;
+}
+
+li.lay1::before{
+	counter-increment: section;
+	content: counter(section) ":";
+	color: red;
+}
+
+ol.lay2{
+	counter-reset: subsection;
+	list-style-type: none;
+	color: red;
+}
+
+li.lay2::before{
+	counter-increment: subsection;
+	content: counter(section) "-" counter(subsection) ":" ;
+	color: red;
+}
+
+ol.lay3{
+	counter-reset: triplesection;
+	list-style-type: none;
+	color: red;
+}
+
+li.lay3::before{
+	counter-increment: triplesection;
+	content: counter(section) "-" counter(subsection) "-" counter(triplesection) ":";
+	color: red;
+}
+
+figure.gallery {
+	overflow: hidden;
+    margin: 5px 5px 20px 5px;
+    border: 1px solid yellow;
+    float: left;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figure.gallery:hover {
+    border: 1px solid red;
+}
+
+figure.gallery img {
+    width: 100%;
+    height: 90%;
+    opacity: 0.5;
+}
+
+figure.gallery:hover img{
+	opacity: 1;
+}
+
+figcaption.desc {
+    padding: 0;
+    text-align: center;
+    color:red;
+}
+
+video{
+	margin:0;
+	outline: 2px solid grey;
+}
+
+
+div.videoBox{
+	width: 504px;
+	overflow: hidden;
+	padding: 0 0 0 2px;
+	margin: 0;
+}
+
+picture{
+	clear: left;
+	display: block;
+	min-width:500px;
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+h2.pictureHead{
+	float:left;
+	width: 25px;
+	margin: 0 5px 0 5px;
+}
+
+source,img.pictureImg{
+	float: left;
+	margin: 0;
+}
+
+nav{
+	position: fixed;
+	z-index: 1;
+	border:2px solid blue;
+	top:0;
+	right: 0;
+}
+
+a.nav{
+	display: block;
+	border-bottom:2px solid blue;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size:20px;
+	font-weight: bold;
+	position: relative;
+}
+
+a.nav:last-child{
+	border-bottom: none;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  position: absolute;
+  left:67px;
+  top:9px;
+}
